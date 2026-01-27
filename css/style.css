@@ -1,0 +1,102 @@
+/* =========================
+   Brand Colours
+========================= */
+:root {
+  --royal-green: #0B2D26;
+  --gold: #D8C3A5;
+  --peach: #FFD3AC;
+  --dark-peach: #DB6551;
+}
+
+/* =========================
+   Reset
+========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   Page Base
+========================= */
+body {
+  min-height: 100vh;
+  background-color: var(--royal-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--gold);
+}
+
+/* =========================
+   Layout Container
+========================= */
+.coming-soon-container {
+  width: 100%;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* =========================
+   Logo (Responsive & Forced)
+========================= */
+.logo {
+  width: 30vw;          /* 30% of screen width on desktop */
+  height: auto;
+  display: block;
+  margin: 0 auto 40px;
+}
+
+/* =========================
+   Tagline
+========================= */
+.tagline {
+  font-size: 1rem;
+  color: var(--peach);
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   Coming Soon Text
+========================= */
+.coming-soon {
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  border-top: 1px solid rgba(216, 195, 165, 0.4);
+  padding-top: 20px;
+}
+
+/* =========================
+   Mobile Responsiveness
+========================= */
+@media (max-width: 768px) {
+
+  .logo {
+    width: 80vw;       /* Larger logo on mobile */
+    margin-bottom: 30px;
+  }
+
+  .tagline {
+    font-size: 0.95rem;
+  }
+
+  .coming-soon {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+}
+
+/* =========================
+   Small Phones
+========================= */
+@media (max-width: 400px) {
+
+  .logo {
+    width: 90vw;
+  }
+}
