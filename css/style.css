@@ -43,11 +43,13 @@ body {
    Logo (Responsive & Forced)
 ========================= */
 .logo {
-  width: 30vw;          /* 30% of screen width on desktop */
-  height: auto;
+  width: 30vw !important;
+  height: auto !important;
+  max-width: none !important;
   display: block;
   margin: 0 auto 40px;
 }
+
 
 /* =========================
    Tagline
@@ -100,3 +102,4 @@ body {
     width: 90vw;
   }
 }
+
