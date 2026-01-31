@@ -93,6 +93,23 @@ body {
   }
 }
 
+@media (max-width: 720px) {
+
+  .logo {
+    width: 1200px;
+    max-width: 90%;
+  }
+
+  .tagline {
+    font-size: 0.95rem;
+  }
+
+  .coming-soon {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+}
+
 /* =========================
    Small Phones
 ========================= */
@@ -101,5 +118,9 @@ body {
    .logo {
     width: 360px;
     max-width: 90%;
+  }
+  .coming-soon {
+    font-size: 2rem;
+    letter-spacing: 2px;
   }
 }
