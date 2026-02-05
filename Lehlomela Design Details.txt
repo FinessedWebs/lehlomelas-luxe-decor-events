@@ -1,0 +1,49 @@
+Lehlomela's Luxe decor events
+
+
+Royal Green - #0B2D26
+Gold - #D8C3A5
+Peach - #FFD3AC
+darker Peach - #DB6551
+
+W 453,2
+H 679,8
+
+Slogan For LLDE:
+“Luxury Decor crafted for the extraordinary”
+
+
+JavaScript Code:
+https://github.com/bedimcode/responsive-watches-website
+Path - assets/js/main.js
+
+Parallax Code
+https://github.com/dixonandmoe/rellax
+
+ScrollReveal
+https://github.com/jlmakes/scrollreveal
+
+/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+
+const sections = document. querySelectorAll('section[id]')
+
+const scrollActive = () =>{
+const scrollY = window. pageYOffset
+
+sections. forEach(current =>{
+
+const sectionHeight = current. offsetHeight,
+sectionTop = current.offsetTop - 58,
+sectionId = current.getAttribute('id'),
+sectionsClass = document. querySelector('.nav_menu a[href *= ' + sectionId + ']' )
+
+if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+sectionsClass.classList.add('active-link')
+
+}else{
+
+sectionsClass.classList.remove('active-link')
+
+})
+
+window. addEventListener('scroll', scrollActive)
