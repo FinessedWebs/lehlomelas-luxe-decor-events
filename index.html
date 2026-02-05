@@ -20,7 +20,7 @@
       src="images/logo.svg" 
       alt="Lehlomela’s Luxe Décor Events Logo" 
       class="logo"
-      id="logoOut"
+      id="logo"
     />
 
     <!-- Tagline -->
@@ -31,6 +31,21 @@
     </p>
 
   </main>
+
+ 
+
+<script>
+  const logo = document.getElementById('logo');
+  let clicks = 0;
+
+  logo.addEventListener('click', () => {
+    clicks += 1;
+    if (clicks === 4) {
+      window.location.href = 'home.html';
+    }
+  });
+</script>
+
 
 </body>
 </html>

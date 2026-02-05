@@ -102,10 +102,10 @@ sr.reveal('.footer')
 /*=============== 3 Press Images ===============*/
 
 
-  const logoOut = document.getElementById('logo');
+  const logo = document.getElementById('logo');
   let clicks = 0;
 
-  logoOut.addEventListener('click', () => {
+  logo.addEventListener('click', () => {
     clicks += 1;
     if (clicks === 3) {
       window.location.href = 'home.html';
