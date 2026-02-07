@@ -87,7 +87,7 @@ img{
 /* ============REUSABLE CSS CLASSES=============*/
 
 .container{
-    /* max-width: 1024px; */
+    max-width: 1024px;
     margin-inline: 1.5rem;
 }
 
@@ -163,32 +163,30 @@ img{
 }
 
  .nav__logo img{
-    width: 230px;
+    width: 30px;
     transition: rotate(-10deg);
 }
 
 .nav__logo{
     align-items: center;
-    column-gap: 25rem;
+    column-gap: .5rem;
     font-family: var(--second-font);
     font-size: var(--h2-font-size);
 }
 
 .nav__toggle{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     cursor: pointer;
 }
 
-@media screen and (min-width: 768px){
-    .nav__menu{
-        position: fixed;
-        top: -100%;
-        left: 0;
-        background-color: var(--body-color);
-        width: 100%;
-        padding-block: 3.5rem;
-        transition: top .4s;
-    }
+.nav__menu{
+    position: fixed;
+    top: -100%;
+    left: 0;
+    background-color: var(--body-color);
+    width: 100%;
+    padding-block: 3.5rem;
+    transition: top .4s;
 }
 
 .nav__list{
@@ -257,9 +255,7 @@ transition: rotate(-15deg);
 
 .home{
     position: relative;
-    background: linear-gradient(180deg, 
-                hsl(210, 88%, 20%), 
-                hsl(210, 70%, 58%));
+    background: linear-gradient(180deg, #D8C3A5 0%, #FFD3AC 100%);
     height: 650px;
     overflow: hidden;
     padding-top: 7rem;  
@@ -437,7 +433,7 @@ transition: rotate(-15deg);
 
 /*================ CELEBRATION ==================*/
 
-.celebration__container{
+.celebrate__container{
     position: relative;
     row-gap: 3.5rem;
 }
@@ -591,23 +587,32 @@ transition: rotate(-15deg);
     }
 
     .about__container,
-    .celebration__container{
+    .celebrate__container{
         grid-template-columns: .6fr;
         justify-content: center;
     }
 }
 
 @media screen and (min-width: 767px) {
-   .nav_toogle,
+   .nav__toggle,
    .nav__img-1,
    .nav__img-2,
    .nav__close{
          display: none;
     } 
 
+    .nav__menu{
+        position: static;
+        width: auto;
+        padding-block: 0;
+        background-color: transparent;
+        transition: none;
+    }
+
     .nav__list{
         flex-direction: row;
         column-gap: 4rem;
+        align-items: center;
     }
     
     .home__village{
@@ -714,7 +719,7 @@ transition: rotate(-15deg);
             left: 22rem;
         }
 
-    .celebration__container{
+    .celebrate__container{
         grid-template-columns: 400px 500px;
         align-items: center;
         column-gap: 6rem;
