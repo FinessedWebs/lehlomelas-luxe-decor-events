@@ -1,51 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Lehlomela’s Luxe Décor Events | Coming Soon</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Favicon -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--========================== FAVICON ===============================-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/logo.png">
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css">
+    <!--========================== REMIXICON ===============================-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+    <!--========================== STYLES ===============================-->
+    <link rel="stylesheet" href="css/home.css">
+    <title>Lehlomela's Luxe Décor Events</title>
 </head>
 <body>
 
-  <main class="coming-soon-container">
+    <!--========================== HEADER ===============================-->
 
-    <!-- Logo -->
-    <img 
-      src="images/logo.svg" 
-      alt="Lehlomela’s Luxe Décor Events Logo" 
-      class="logo"
-      id="logo"
-    />
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                 <img src="images/logo.svg" alt="Lehlomela's Luxe Décor Events Logo" > <!--class="nav__logo-img" -->
+                
+            </a>
 
-    <!-- Tagline -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
 
-    <!-- Coming Soon -->
-    <p class="coming-soon">
-      Coming Soon
-    </p>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
 
-  </main>
+                    <li class="nav__item">
+                        <a href="services.html" class="nav__link">Services</a>
+                    </li>
 
- 
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
 
-<script>
-  const logo = document.getElementById('logo');
-  let clicks = 0;
+                <!-- close button -->
+                 <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                 </div>
 
-  logo.addEventListener('click', () => {
-    clicks += 1;
-    if (clicks === 4) {
-      window.location.href = 'home.html';
-    }
-  });
-</script>
+                 <!-- <img src="images/flower_1.png" alt="nav image" class="nav__img-1">
+                 <img src="images/flower_1.svg" alt="nav image" class="nav__img-2"> -->
+
+                </div>
+
+                <!-- Toogle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+
+        </nav>
+    </header>
+
+<!--========================= MAIN ===========================-->
+<main class="main"> 
+    <!--========================== HOME ===============================-->
+    <section class="home section" id="home">
+        <div class="home__content container">
+            <h1 class="home__title">Lehlomela's Luxe Décor Events</h1>
+            <p class="home__subtitle">Luxury decor and event styling crafted with elegance, warmth, and unforgettable detail.</p>
+            <div class="home__buttons">
+                <a href="services.html" class="button">Our Services</a>
+                <a href="contact.html" class="button button--ghost">Book Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!--========================== ABOUT ===============================-->
+    <section class="about section" id="about">
+
+        <div class="about__container container grid">
+            <div class="about__data">
+                <h2 class="section__title">
+                    Luxury Decor crafted for the <br> extraordinary
+                </h2>
+
+                <p class="about__description">
+                     Luxury event décor and styling 
+                     brand where elegance meets heartfelt 
+                     care. Inspired by the meaning of 
+                     “Lehlomela,” we craft sophisticated 
+                     environments with thoughtful detail, 
+                     ensuring every celebration feels 
+                     curated, personal, and unforgettable.
+                </p>
+
+                <a href="contact.html" class="button">Contact Us</a>
+
+            </div>
+
+            <img src="images/picture1.jpeg" alt="Luxury event setup with elegant floral and table decor" class="about__img">
+            <!-- <img src="images/flower_1.png" alt="about image" class="about__snow-1">
+            <img src="images/flower_1.png" alt="about image" class="about__snow-2"> -->
+        </div>
+
+    </section>
+
+    <!--========================== Send ===============================-->
+    <section class="send section" id="services">
+
+        <h2 class="section__title">
+                Our Promise to Deliver:
+        </h2>
+
+        <div class="send__container container grid">
+            <div class="send__card">
+                <div class="send__sphere">
+                    <img src="images/luxury_deco.png" alt="Luxury decor setup" class="send__img">
+                </div>
+
+                <h3 class="send__title">Luxury Decor</h3>
+                <p class="send__description">
+                   Signature luxury decor that transforms your venue into an elegant, unforgettable setting.</p>
+            </div>
+            <div class="send__card">
+                <div class="send__sphere">
+                    <img src="images/highend_styling.png" alt="High-end event styling" class="send__img">
+                </div>
+
+                <h3 class="send__title">High-End Styling</h3>
+                <p class="send__description">
+                   High-end styling with premium finishes, layered textures, and polished details for every moment.</p>
+            </div>
+            <div class="send__card">
+                <div class="send__sphere">
+                    <img src="images/cherrish_celebration.png" alt="Cherished celebration decor" class="send__img">
+                </div>
+
+                <h3 class="send__title">Cherished Celebrations</h3>
+                <p class="send__description">
+                   Warm, heartfelt celebration styling designed to help you cherish milestone moments beautifully.</p>
+            </div>
+
+            <!-- <img src="images/flower_1.png" alt="send image" class="send__snow-1">
+            <img src="images/flower_1.png" alt="send image" class="send__snow-2">
+            <img src="images/flower_1.png" alt="send image" class="send__snow-3"> -->
+
+        </div>
+
+    </section>
+
+    <!--========================== GALLERY ===============================-->
+    <section class="gallery section" id="gallery">
+        <div class="celebrate__container container container grid">
+            <div class="celebrate__data">
+                <h2 class="section__title">
+                    Gallery
+                </h2>
+
+                <p class="celebrate__description">
+                    Explore our curated gallery showcasing elegant event décor and styling that transforms moments into unforgettable experiences.
+                </p>
+
+                <a href="#" class="button">View More</a>
+
+            </div>
+
+            <img src="images/logo.png" alt="" aria-hidden="true" class="celebrate__img">
+            <!-- <img src="images/flower_1.png" alt="flower image" class="celebrate__snow-1">
+            <img src="images/flower_1.png" alt="flower image" class="celebrate__snow-2"> -->
+
+        </div>
+    </section>
+
+</main>
+
+<!---->
+<footer class="footer">
+
+    <div class="footer__container container">
+        <a href="#" class="footer__logo">Lehlomela Luxe Deco Events</a>
+        <p class="footer__slogan">Luxury Decor crafted for the extraordinary</p>
+
+        <div class="footer__contact">
+            <a href="https://wa.me/27825436544" target="_blank" rel="noopener noreferrer" class="footer__contact-link">
+                <i class="ri-whatsapp-line" aria-hidden="true"></i>
+                <span>WhatsApp</span>
+            </a>
+            <a href="mailto:hello@lehlomelaluxe.co.za" class="footer__contact-link">
+                <i class="ri-mail-line" aria-hidden="true"></i>
+                <span>Email</span>
+            </a>
+            <a href="tel:+27825436544" class="footer__contact-link">
+                <i class="ri-phone-line" aria-hidden="true"></i>
+                <span>+27 82 543 6544</span>
+            </a>
+        </div>
+
+        <ul class="footer__social">
+            <li>
+                <a href="https://www.instagram.com/lehlomelaluxedecoevents" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link footer__social-link--primary">
+                    <i class="ri-instagram-line"></i>
+                </a>
+                <a href="https://www.facebook.com/lehlomelaluxedecoevents" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+                    <i class="ri-facebook-box-line"></i>
+                </a>
+                <a href="https://www.twitter.com/lehlomelaluxedecoevents" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+                    <img src="images/twitter-x-line.svg" alt="" aria-hidden="true" class="twitter-x-icon">
+                </a>
+            </li>
+        </ul>
+
+            <span class="footer__copy">&#169; 2026 Lehlomela Luxe Deco Events. All rights reserved.<br>by FinessedWebs</span>
+
+            <!-- <img src="images/flower_1.png" alt="footer image" class="footer__snow-1">
+            <img src="images/flower_1.png" alt="footer image" class="footer__snow-2"> -->
+    </div>
+
+</footer>
+
+<!--====================== SCROLL UP ===============================-->
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line"></i>
+</a>
+
+<!--=========== RELLAX JS-->
+<script src="js/rellax.min.js"></script>
+
+<!--GSAP-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!--SCROLLREVEAL-->
+<script src="js/scrollreveal.min.js"></script>
+
+<!--========================== MAIN JS ===============================-->
+<script src="js/main.js"></script>
+
+
 
 
 </body>
 </html>
+
+
+
