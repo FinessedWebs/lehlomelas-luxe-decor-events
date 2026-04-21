@@ -1,5 +1,15 @@
 Lehlomela's Luxe decor events
 
+NameCheap PrivateEmail.com Credentials:
+thato@lehlomelaluxedecoevents.events
+@Matsibekhanyi04
+
+Namecheap
+matsibe
+@Khanyimatsibe04
+
+https://www.namecheap.com/support/knowledgebase/article.aspx/9188/2175/gmail-fetcher-setup-for-namecheap-private-email/
+
 
 Royal Green - #0B2D26
 Gold - #D8C3A5
@@ -12,6 +22,9 @@ H 679,8
 Slogan For LLDE:
 “Luxury Decor crafted for the extraordinary”
 
+matsibe
+@Khanyimatsibe04
+
 
 JavaScript Code:
 https://github.com/bedimcode/responsive-watches-website
@@ -21,7 +34,7 @@ Parallax Code
 https://github.com/dixonandmoe/rellax
 
 ScrollReveal
-https://github.com/jlmakes/scrollreveal
+https://github.com/jlmakes/scrollreveal/blob/master/dist/scrollreveal.min.js
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
@@ -47,3 +60,9 @@ sectionsClass.classList.remove('active-link')
 })
 
 window. addEventListener('scroll', scrollActive)
+
+
+
+
+bedimcode-christmas-websitnn.netlify.app
+
